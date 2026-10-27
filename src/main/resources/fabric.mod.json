@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "passwordwarps",
+  "version": "${version}",
+  "name": "Password Warps",
+  "description": "Server-side warps protected by a password. /setwarp <name> <password>, /warp <name> <password>, /delwarp <name> <password>, /warps. No Fabric API needed; vanilla clients can join.",
+  "authors": ["Shardul"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/passwordwarps/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.shardul.passwordwarps.PasswordWarps"]
+  },
+  "mixins": ["passwordwarps.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
